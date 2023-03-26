@@ -1,0 +1,346 @@
+<pyvcp>
+<tabs>
+    <names> ["TCP","Easy Probe"]</names>
+</tabs>
+<tabs>
+    <names>["TCP", "Easy Probe", "Leer"]</names>
+    <vbox>
+        <label>
+            <text>"Spindle speed:"</text>
+        </label>
+        <bar>
+            <halpin>"spindle-speed"</halpin>
+            <max_>5000</max_>
+        </bar>
+            <vbox>
+    <relief>"ridge"</relief>
+    <bd>5</bd>
+    <label>
+      <text>"SWITCHKINS"</text>
+      <relief>RIDGE</relief>
+      <bd>3</bd>
+    </label>
+    <multilabel>
+      <legends>["1:TCP-ON", "0:TCP-OFF", "2:USERK"]</legends>
+      <font>("DejaVu Sans Mono",16)</font>
+      <bg>"black"</bg>
+      <fg>"yellow"</fg>
+    </multilabel>
+    <button>
+      <halpin>"type1-button"</halpin>
+      <text>"TCP-OFF"</text>
+      <bd>3</bd>
+    </button>
+    <button>
+      <halpin>"type0-button"</halpin>
+      <text>"TCP-ON"</text>
+      <bd>3</bd>
+    </button>     
+  </vbox>
+
+  <vbox>
+  <labelframe text="Joints values">
+    <font>("Helvetica",14)</font>
+    <hbox>
+     <label>
+        <text>"X: "</text>
+        <font>("Helvetica",14)</font>
+     </label>
+     <number>
+        <halpin>"joint0"</halpin>
+        <font>("Helvetica",14)</font>
+        <format>"4.4f"</format>
+       </number>
+    </hbox>
+    <hbox>
+     <label>
+        <text>"Y: "</text>
+        <font>("Helvetica",14)</font>
+     </label>
+     <number>
+        <halpin>"joint1"</halpin>
+        <font>("Helvetica",14)</font>
+        <format>"4.4f"</format>
+       </number>
+    </hbox>
+    <hbox>
+     <label>
+        <text>"Z: "</text>
+        <font>("Helvetica",14)</font>
+     </label>
+     <number>
+        <halpin>"joint2"</halpin>
+        <font>("Helvetica",14)</font>
+        <format>"4.4f"</format>
+       </number>
+    </hbox>
+    <hbox>
+     <label>
+        <text>"B: "</text>
+        <font>("Helvetica",14)</font>
+     </label>
+     <number>
+        <halpin>"joint3"</halpin>
+        <font>("Helvetica",14)</font>
+        <format>"4.4f"</format>
+       </number>
+    </hbox>
+    <hbox>
+     <label>
+        <text>"C: "</text>
+        <font>("Helvetica",14)</font>
+     </label>
+     <number>
+        <halpin>"joint4"</halpin>
+        <font>("Helvetica",14)</font>
+        <format>"4.4f"</format>
+       </number>
+    </hbox>
+    <hbox>
+     <label>
+        <text>"Drehpunkt: "</text>
+        <font>("Helvetica",14)</font>
+     </label>
+     <number>
+        <halpin>"pivot-len"</halpin>
+        <font>("Helvetica",14)</font>
+        <format>"4.4f"</format>
+       </number>
+    </hbox>        
+  </labelframe>
+  </vbox>
+
+  <vbox>
+    <relief>"ridge"</relief>
+    <bd>5</bd>
+    <button>
+      <halpin>"type3-button"</halpin>
+      <text>"Probe on "</text>
+      <bd>3</bd>
+    </button>
+    <checkbutton>
+      <halpin>"type4-button"</halpin>
+      <text>"Tool Probe  "</text>
+      <bd>3</bd>
+   </checkbutton>
+  </vbox>
+ <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Probe aktive"</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-10"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>
+    </hbox>
+    <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Bat"</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-11"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>       
+    </hbox>
+    <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Err"</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-12"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>       
+    </hbox>
+        <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Messung"</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-19"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>       
+    </hbox>
+     <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Druckluft 6 bar i.o."</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-13"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>
+    </hbox>
+    <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Druckluft 4 bar i.o."</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-14"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>
+    </hbox>
+         <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Druck Zentralschmierung i.o."</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-15"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>
+    </hbox>
+                 <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Kühlung Durchfluss i.o."</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-18"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>
+    </hbox>
+             <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"4 Achse Alarm"</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-16"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>
+    </hbox>
+             <hbox>
+        <relief>RIDGE</relief>
+        <bd>2</bd>
+        <label>
+            <text>"Spindle at speed"</text>
+            <font>("Helvetica",10)</font>
+        </label>
+        <led>
+            <halpin>"led-17"</halpin>
+            <size>25</size>
+            <on_color>"green"</on_color>
+            <off_color>"red"</off_color>
+        </led>
+    </hbox> 
+    </vbox>
+    <vbox>
+        <label>
+            <text>"(this is the green eggs tab)"</text>
+        </label>
+        <vbox>
+            <hbox>
+                <button width="5" text="G54" halpin="g54" disable_pin="true" />
+                <button width="5" text="G55" halpin="g55" disable_pin="true" />
+                <button width="5" text="G56" halpin="g56" disable_pin="true" />
+            </hbox>
+            <hbox>
+                <button width="5" text="G57" halpin="g57" disable_pin="true" />
+                <button width="5" text="G58" halpin="g58" disable_pin="true" />
+                <button width="5" text="G59" halpin="g59" disable_pin="true" />
+            </hbox>
+            <hbox>
+                <button width="5" text="G59.1" halpin="g591" disable_pin="true" />
+                <button width="5" text="G59.2" halpin="g592" disable_pin="true" />
+                <button width="5" text="G59.3" halpin="g593" disable_pin="true" />
+            </hbox>
+            <label font="Helvetica, 12" text=" " />
+            <hbox>
+                <button width="5" text="P0 X0" halpin="p0x0" disable_pin="true" />
+                <button width="5" text="P0 Y0" halpin="p0y0" disable_pin="true" />
+                <button width="5" text="P0 Z0" halpin="p0z0" disable_pin="true" />
+            </hbox>
+            <label font="Helvetica, 12" text=" " />
+            <hbox>
+                <button width="5" text="Tool 1" halpin="tool1" disable_pin="true" />
+                <button width="5" text="Tool 2" halpin="tool2" disable_pin="true" />
+                <button width="5" text="Tool 3" halpin="tool3" disable_pin="true" />
+            </hbox>
+            <label font="Helvetica, 12" text=" " />
+            <hbox>
+        <label text="Diameter" width="10" />
+                <spinbox width="10" min_="0" max_="100" initval="25" param_pin="1" format="2.3f" halpin="probe_diameter" />
+        <label text="mm" />
+            </hbox>
+            <label font="Helvetica, 1" text=" " />
+            <hbox>
+        <label text="Zero/Offset" width="10" />
+                <spinbox width="10" min_="-1000" max_="1000" initval="0" param_pin="1" format="2.3f" halpin="probe_offset" />
+        <label text="mm" />
+        </hbox>
+            <label font="Helvetica, 12" text=" " />
+            <hbox>
+                <button width="2" height="2" padx="10" text="" halpin="blank_1" relief="flat" disable_pin="true" />
+                <button width="2" height="2" padx="10" text="Y↑" halpin="probe_y" disable_pin="true" />
+            </hbox>
+            <hbox>
+                <button width="2" height="2" padx="10" text="←X" halpin="probe_minus_x" disable_pin="true" />
+                <button width="2" height="2" padx="10" text="O" halpin="probe_hole" disable_pin="true" />
+                <button width="2" height="2" padx="10" text="X→" halpin="probe_x" disable_pin="true" />
+            </hbox>
+            <hbox>
+                <button width="2" height="2" padx="10" text="" halpin="blank_2" relief="flat" disable_pin="true" />
+                <button width="2" height="2" padx="10" text="Y↓" halpin="probe_minus_y" disable_pin="true" />
+                <button width="3" height="2" padx="23" text="" halpin="blank_3" relief="flat" disable_pin="true" />
+                <button width="2" height="2" padx="10" text="-Z" halpin="probe_minus_z" disable_pin="true" />
+            </hbox>
+            <label font="Helvetica, 12" text=" " />
+            <hbox>
+                <checkbutton padx="4" halpin="act_calib" text="Activate " />
+                <button text="Calibration" padx="14" halpin="probe_calib" disable_pin="true" />
+            </hbox>
+            <label font="Helvetica, 10" text=" " />
+            <hbox>
+        <label text="Probe Signal" width="10" />
+                <rectled width="25" height="25" on_color="#80b000" off_color="#ff3000" halpin="probe_led" />
+        </hbox>
+        </vbox>
+    </vbox>
+    <vbox>
+        <label>
+            <text>"(this tab has nothing on it)"</text>
+        </label>
+    </vbox>
+</tabs>
+</pyvcp>

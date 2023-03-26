@@ -1,0 +1,49 @@
+T30 P30 Z117.296 D16.01 ;2544k.016 
+T2 P2 Z108.727 D8 ;nc anbohrer 8er 
+T3 P3 Z64.2 D10 ;45grad phasenfräser/senker 
+T21 P21 Z95.1 D63 ;messerkopf 
+T99 P99 X-0.000281 Y-9.2e-05 Z217.913 D6.006 I5.977011 J5.972312 ;messtaster 
+T20 P20 Z108.714 D16 ;2869a schruppfräser 
+T10 P10 Z144.84 D4.2 ;vhm bohrer 4,2 
+T12 P12 Z136.705 D5.5 ;vhm bohrer 5,5 
+T15 P15 Z138.183 D6.5 ;vhm 8,5 
+T31 P31 Z95.064 D9.3 ;schlichtfräser 9,3 
+T16 P16 Z131.979 D9 ;zapfensenker m5 
+T17 P17 Z139.082 D3.3 ;vhm 3.3 
+T14 P14 Z150.65 D5 ;vhm 5.0 
+T19 P19 Z182.366 D10.2 ;hss 10,2 bohrer 
+T18 P18 Z190.233 D9 ;gewindefräser m12 p 1,75 
+T32 P32 Z153.505 D15.3 ;16er spannzange 
+T4 P4 Z74 D19 ;45grad phasenfräser/senker 
+T88 P88 Z329.2 ;test 
+T77 P77 Z108.865 ;test2 
+T98 P98 Z220.148 D6.012 ;messtaster test 
+T22 P22 ;2873 
+T23 P23 Z92.9497 D3 ;2518a.003 
+T33 P33 Z152.533 D10 ;2518a.010 schrumpf lang 
+T6 P6 Z123.776 D2.5 ;hss bohrer 2,5 
+T80 P80 Z140.773 D6 ;m6 gewindefutter 
+T34 P34 Z150.631 D16.2 ;16er hss lang 
+T35 P35 Z166.837 D25.012 ;25er hss 
+T36 P36 Z160.418 D9.976 ;2518a.010 
+T75 P75 Z132.81 D9.64 ;10er holz 
+T7 P7 Z161.429 D7 ;hss bohrer 7mm 
+T37 P37 Z115.54 D15.5 ;1926a.016 
+T24 P24 D8 ;2518a.08 
+T25 P25 Z208.449 D6.8 ;6.8lang 
+T79 P79 Z110.8 D6 ;radienfräser r5 
+T1 P1 Z103.218 D7.22 ;8er zweischneider alu 
+T78 P78 Z145.933 D6 ;vhm bohrer 
+T60 P60 D63 ;messerkopf 
+T61 P61 Z166.837 D25.012 ;24er schaftfräser 
+T62 P62 Z107.075 D10 ;wnt 10er 
+T63 P63 Z112.939 D7.5 ;gewindefräser p1.5 108.023 
+T64 P64 Z157.82 D10.5 ;vhm 10.5 
+T81 P81 Z105 D12 ;test switchkins 
+T97 P97 Z173.997 ;messtaster analog 
+T26 P26 Z148.998 D8.5 ;vhm 8.5 
+T76 P76 Z109.16 D8 ;8er zweischneider alu/holz 
+T74 P74 Z128.778 D7.97 ;16er alu schrumpf 
+T73 P73 Z110.745 D6 ;r5 fräser 
+T72 P72 Z125.869 D15.75 ;2869 
+T71 P71 Z108.689 D8.014 ;Phasenfräser 

@@ -1,0 +1,40 @@
+# Halshow settings
+# This file is generated automatically.
+wm geometry . 889x846+1025+31
+placeFrames 0.47665847665847666
+set ::ratio 0.47665847665847666
+set ::old_w_leftf 160
+set ::watchlist {
+    pin+lcec.0.state-init
+    pin+lcec.0.state-op
+    pin+lcec.0.state-preop
+    pin+lcec.0.state-safeop
+    pin+lcec.0.7.X-Betriebsart
+    pin+lcec.0.7.X-Pos
+    pin+lcec.0.7.X-Statuswort-Kommutierung_gefunden
+    pin+lcec.0.7.X-Statuswort-Referenz_gefunden
+    pin+lcec.0.7.X-Statuswort-Schleppfehler
+    pin+lcec.0.7.X-angezeigte-Betriebsart
+    pin+lcec.0.7.X-cmd-/QuickStop
+    pin+lcec.0.7.X-cmd-ChangeSetImmediatly
+    pin+lcec.0.7.X-cmd-EnableIPMode
+    pin+lcec.0.7.X-cmd-EnableOperation
+    pin+lcec.0.7.X-cmd-EnableVoltage
+    pin+lcec.0.7.X-cmd-FaultReset
+    pin+lcec.0.7.X-cmd-Halt
+    pin+lcec.0.7.X-cmd-RelativPos
+    pin+lcec.0.7.X-cmd-SwitchOn
+    pin+lcec.0.7.X-cmd-bit09
+    pin+lcec.0.7.X-cmd-bit11
+    pin+lcec.0.7.X-cmd-bit12
+    pin+lcec.0.7.X-cmd-bit13
+    pin+lcec.0.7.X-cmd-bit14
+    pin+lcec.0.7.X-cmd-bit15
+}
+set ::workmode watchhal
+set ::watchInterval 100
+set ::col1_width 100
+set ::ffmts 
+set ::ifmts 
+set ::alwaysOnTop 0
+set ::autoSaveWatchlist 1
